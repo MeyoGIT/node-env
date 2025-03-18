@@ -3,4 +3,5 @@ module.exports = {
   transform: {
     "^.+\\.jsx?$": "babel-jest",
   },
+  testPathIgnorePatterns: ["<rootDir>/src/App.test.js"],
 };

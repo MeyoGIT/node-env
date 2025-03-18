@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🚀 Environnement de Développement Node.js avec React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Description
+Ce projet est un environnement de développement structuré et professionnel pour une application Node.js utilisant React. Il inclut des outils modernes tels que Webpack, Babel, ESLint, Jest, Husky et JSDoc, afin d'assurer une qualité optimale du code.
 
-## Available Scripts
+## ⚙️ Installation
+### 📋 Prérequis
+- [Node.js](https://nodejs.org/) installé (version recommandée : LTS)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-In the project directory, you can run:
+### 🛠️ Étapes d'installation
+1. 📥 Cloner le projet :
+   ```sh
+   git clone <repository_url>
+   cd <repository_name>
+   ```
+2. 📦 Installer les dépendances :
+   ```sh
+   npm install
+   ```
 
-### `npm start`
+## 📂 Structure du Projet
+```
+📁 .husky/              # Configuration de Husky pour la convention de commits
+📁 docs/                # Documentation du projet
+📁 node_modules/        # Dépendances Node.js
+📁 public/              # Fichiers publics (index.html, assets...)
+📁 src/                 # Code source de l'application React
+📁 test/                # Tests unitaires
+📝 .babelrc             # Configuration de Babel
+🚫 .gitignore           # Exclusions Git (inclut .env)
+✅ commitlint.config.js # Configuration de Commitlint
+🔍 eslint.config.mjs    # Configuration de ESLint
+🧪 jest.config.js       # Configuration de Jest
+📖 jsdoc.json           # Configuration de JSDoc
+📜 package.json         # Dépendances et scripts
+🛠️ webpack.config.js    # Configuration de Webpack
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📜 Scripts npm
+Les commandes suivantes sont définies dans `package.json` :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **🚀 Développement** :
+  ```sh
+  npm run dev
+  ```
+  Lance le serveur de développement avec Webpack, ESLint en temps réel et hot reload.
 
-### `npm test`
+- **🏗️ Build pour production** :
+  ```sh
+  npm run prod
+  ```
+  Compile l'application et génère le bundle final après l'exécution des tests.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **🧪 Exécution des tests** :
+  ```sh
+  npm run test
+  ```
+  Exécute les tests unitaires avec Jest et affiche la couverture de test.
 
-### `npm run build`
+- **🔍 Linter** :
+  ```sh
+  npm run lint
+  ```
+  Analyse le code avec ESLint selon la norme Airbnb.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **📖 Documentation automatique** :
+  ```sh
+  npm run doc
+  ```
+  Génère la documentation avec JSDoc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **⚡ Génération automatique des commits conventionnels** :
+  ```sh
+  npm run commit
+  ```
+  Utilise Commitizen pour guider l'utilisateur dans la rédaction de commits conformes à la convention.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Outils Utilisés
+- **🧪 Tests unitaires** : Jest
+- **📖 Documentation automatique** : JSDoc
+- **📏 Convention de commits** : Husky, Commitlint, Commitizen
+- **🔍 Linter** : ESLint (norme Airbnb)
+- **📦 Bundler** : Webpack
+- **⚡ Transpilation** : Babel
+- **🎨 Styles** : SASS
+- **⚛️ Framework Frontend** : React.js
 
-### `npm run eject`
+## 🤝 Contribution
+1. 🔀 Forker le repository
+2. 🌿 Créer une branche feature (`git checkout -b feature-nom`)
+3. 💬 Commit avec une convention (`npm run commit` pour suivre le format standard)
+4. 📤 Push (`git push origin feature-nom`)
+5. 📝 Créer une pull request
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📜 Licence
+Ce projet est sous licence MIT.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
